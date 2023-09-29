@@ -12,6 +12,8 @@ import Education from './Components/Education/Education';
 import Programming from './Components/Programming/Programming';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
+import SignUp from './Components/SignUp/SignUp';
+import Testing from './Components/Testing/Testing';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
       {
         path: 'login',
         element: <Login/>
+      },
+      {
+        path: 'signup',
+        element: <SignUp/>
+      },
+      {
+        path: 'testing',
+        element: <Testing/>
       }
     ]
   },

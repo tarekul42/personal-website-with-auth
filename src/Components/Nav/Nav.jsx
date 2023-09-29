@@ -18,17 +18,17 @@ const Nav = () => {
                     <li><NavLink to='programming'>Programming</NavLink></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Tarekul Islam RIfat</a>
+                <a className="btn btn-ghost normal-case text-xl xl:text-4xl">Tarekul Islam RIfat</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 xl:text-2xl">
                     <li><NavLink to='/'>Home</NavLink></li>
                     <li className='mx-2'><NavLink to='education'>Education</NavLink></li>
                     <li><NavLink to='programming'>Programming</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">
-                {user ? <NavLink to='/register' className="btn">Register</NavLink> :
+                {user ? <NavLink to='/register' className="xl:text-3xl px-4">Register</NavLink> :
                 <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
