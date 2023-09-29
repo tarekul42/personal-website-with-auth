@@ -1,9 +1,26 @@
 import React from 'react';
 import { FaGoogle, FaFacebookF} from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import app from '../../firebase/firebase.config';
 
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
 
 const Register = () => {
+
+    const handleSignUpWithGoogle = () =>{
+        // * Sign Up user with google auth provider
+        signInWithPopup(auth, provider)
+        .then((result) => {
+            const user = result.user;
+            console.log(user);
+        }).catch((error) => {
+            const errorMessage = error.message;
+            console.log(errorMessage);
+        });
+    }
+
     return (
         <div className="hero min-h-screen hero-content flex-col mx-auto">
             <div className="text-center">
@@ -17,7 +34,7 @@ const Register = () => {
                                 Login
                                 </NavLink>
                         <NavLink to='/signup' className="btn btn-outline btn-secondary my-2 xl:h-28 xl:text-4xl">Sign Up</NavLink>
-                        <button className="btn btn-outline btn-error xl:h-28 xl:text-4xl"><FaGoogle />Continue with Google</button>
+                        <button onClick={handleSignUpWithGoogle} className="btn btn-outline btn-error xl:h-28 xl:text-4xl"><FaGoogle />Continue with Google</button>
                         <button className="btn btn-outline btn-info my-2 xl:h-28 xl:text-4xl"><FaFacebookF/>Continue with Facebook</button>
                     </div>
                 </div>
