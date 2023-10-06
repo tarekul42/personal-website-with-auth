@@ -1,12 +1,3 @@
-
-
-/*
-Be the Sun,
-not the Moon!
-Don't Ever
-Listen Another
-*/ 
-// life is a cycle of...
 while (alive){
     sleep(2,7)
     read(7,8)
@@ -22,18 +13,6 @@ while (alive){
     read(7,12)
     programming(12,2)
 }
-/* ...
-*/ 
-/*
-Passion, Struggle
-Failure, Patients
-Hardwork, Sacrifice
-*/ 
-/*
-Success is not a
-Comfortable Procedure
-*/ 
-
 
 
 // this routine for non Moslims students like me.
@@ -55,7 +34,7 @@ while (alive){
     read(7,12)
     programming(12,2)
 }
-// thif routine for a Muslim students
+// this routine for a Muslim students
 while (alive){
     sleep(11,5)
     read(6,8)
