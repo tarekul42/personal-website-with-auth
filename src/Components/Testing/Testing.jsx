@@ -2,9 +2,29 @@ import React from 'react';
 import { Form } from 'react-router-dom';
 
 const testing = () => {
+   /*  if (password.length < 8) {
+        setError('Your Password should at least 8 character.');
+        return;
+    }
+    else if (!/(?=.*[a-zA-Z])/.test(password)) {
+        setError('Your Password should contain at least 1 alphabetic character.');
+        return;
+    }
+    else if (!/(?=.*[@^*!#\$%&\?].*)/.test(password)) {
+        setError('Your password should contain at least 1 special characters.');
+        return;
+    }
+    else if (!/(?=.*[1-9])/) {
+        setError('Your password should contain at least 1 digit.');
+        return;
+    }
+    else {
+        setSuccess('Your registration is successfull.')
+        setError('')
+    } */
     return (
         <>
-        {/* <div className="hero min-h-screen hero-content flex-col mx-auto">
+            {/* <div className="hero min-h-screen hero-content flex-col mx-auto">
             <div className="text-center">
                 <h1 className="text-5xl font-bold">Login now!</h1>
             </div>
